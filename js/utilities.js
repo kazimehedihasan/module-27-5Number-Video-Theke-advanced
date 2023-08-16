@@ -1,8 +1,10 @@
 function getInputValueById(inputFieldId){
     const inputField = document.getElementById(inputFieldId);
-    const inputFieldValueString = inputField.Value;
+    // console.log(inputField);
+    const inputFieldValueString = inputField.value;
+    // console.log(inputFieldValueString);
     const inputFieldValue = parseFloat(inputFieldValueString);
-    inputField.Value = '';
+    inputField.value = '';
     return inputFieldValue;
 }
 function getTextElementValueById(elementId){
@@ -15,3 +17,4 @@ function setTextElementValueById(elementId, newValue){
     const textElement = document.getElementById(elementId);
     textElement.innerText = newValue;
 }
+console.log('mehedi hasan');
